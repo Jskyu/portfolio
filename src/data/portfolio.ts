@@ -4,7 +4,7 @@ export const portfolio = {
   tagline: '데이터를 모르면\n서비스를 모릅니다',
   subTagline: '데이터를 제대로, 그것이 전부입니다',
   heroDesc: '공공기관 SI 20개+ 프로젝트를 수행한 백엔드 개발자입니다.',
-  heroTechTags: ['Spring Boot', 'JPA/QueryDSL', 'OpenSearch', 'Oracle/PostgreSQL'],
+  heroTechTags: ['Spring Boot', 'Mybatis/JPA/QueryDSL', 'OpenSearch', 'Mysql/Oracle/PostgreSQL'],
   github: 'https://github.com/Jskyu',
   email: 'hisunggyu@gmail.com',
   phone: '+82 10-8193-7533',
@@ -23,17 +23,17 @@ export const portfolio = {
 
   expertise: [
     { num: '01', title: '데이터 플랫폼·검색', tags: ['iRODS', 'OpenSearch'] },
-    { num: '02', title: '공공 SI 백엔드', tags: ['Egovframework', 'JPA'] },
+    { num: '02', title: '공공 SI 백엔드', tags: ['Egovframework', 'Mybatis / JPA'] },
     { num: '03', title: '시스템 연계·서버구축', tags: ['Linux', 'API 설계'] },
     { num: '04', title: 'AI 도구 활용', tags: ['Claude', 'Gemini'] },
   ],
 
   skills: [
     { category: 'LANGUAGE', items: ['Java', 'Python', 'JavaScript', 'SQL'] },
-    { category: 'FRAMEWORK', items: ['Spring Boot', 'JPA / QueryDSL', 'MyBatis', 'Spring Security', 'Egovframework', 'Thymeleaf'] },
-    { category: 'DATA', items: ['Oracle', 'PostgreSQL', 'OpenSearch', 'RDBMS'] },
-    { category: 'INFRA', items: ['Linux', 'Docker', 'iRODS'] },
-    { category: 'TOOLING', items: ['Git', 'Maven', 'Gradle', 'IntelliJ'] },
+    { category: 'FRAMEWORK', items: ['Spring Boot', 'MyBatis', 'JPA / QueryDSL', 'Spring Security', 'Egovframework', 'Thymeleaf'] },
+    { category: 'DATA', items: ['Mysql', 'Oracle', 'PostgreSQL', 'OpenSearch', 'RDBMS'] },
+    { category: 'INFRA', items: ['Linux', 'Docker', 'iRODS', 'OpenSearch'] },
+    { category: 'TOOLING', items: ['Git', 'Maven', 'Gradle', 'IntelliJ', 'VS Code'] },
     { category: 'AI', items: ['Claude', 'Gemini', 'ChatGPT'] },
   ],
 
