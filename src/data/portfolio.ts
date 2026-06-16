@@ -3,7 +3,7 @@ export const portfolio = {
   title: '백엔드 개발자',
   tagline: '데이터를 모르면\n서비스를 모릅니다',
   subTagline: '데이터를 제대로, 그것이 전부입니다',
-  heroDesc: '공공기관 SI 20개+ 프로젝트를 수행한 백엔드 개발자입니다.',
+  heroDesc: '공공기관 SI 20개+ 프로젝트를 수행한 6년차 백엔드 개발자입니다.',
   heroTechTags: ['Spring Boot', 'Mybatis/JPA/QueryDSL', 'OpenSearch', 'Mysql/Oracle/PostgreSQL'],
   github: 'https://github.com/Jskyu',
   email: 'hisunggyu@gmail.com',
