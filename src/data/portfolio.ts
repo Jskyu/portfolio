@@ -31,8 +31,8 @@ export const portfolio = {
   skills: [
     { category: 'LANGUAGE', items: ['Java', 'Python', 'JavaScript', 'SQL'] },
     { category: 'FRAMEWORK', items: ['Spring Boot', 'MyBatis', 'JPA / QueryDSL', 'Spring Security', 'Egovframework', 'Thymeleaf'] },
-    { category: 'DATA', items: ['Mysql', 'Oracle', 'PostgreSQL', 'OpenSearch', 'RDBMS'] },
-    { category: 'INFRA', items: ['Linux', 'Docker', 'iRODS', 'OpenSearch'] },
+    { category: 'DATA', items: ['Mysql', 'Oracle', 'PostgreSQL', 'RDBMS'] },
+    { category: 'INFRA', items: ['Nginx', 'Apache', 'Tomcat', 'Linux', 'Docker', 'iRODS', 'OpenSearch'] },
     { category: 'TOOLING', items: ['Git', 'Maven', 'Gradle', 'IntelliJ', 'VS Code'] },
     { category: 'AI', items: ['Claude', 'Gemini', 'ChatGPT'] },
   ],
@@ -187,7 +187,7 @@ export const portfolio = {
         'KISTI 연구 데이터 6TB+를 iRODS 분산 파일시스템으로 관리하면서, Spring 백엔드에서 가상 폴더를 실제 파일시스템처럼 다뤄야 했습니다. 또한 200만+ 건의 데이터셋 목록을 빠르게 조회해야 했습니다.',
       architectureDesc:
         'iRODS Cluster를 별도 서버로 분리하고, Tomcat 모듈(공통·관리자·사용자·데이터·OpenAPI 등)을 Docker 기반 MSA로 구성했습니다. Python iRODS 클라이언트를 브릿지 레이어로 연동하고, Spring Security + Redis 세션으로 인증을 처리했습니다.',
-      architecture: '',
+      architecture: 'aida-architecture.svg',
       whyThisStack: [
         'iRODS — 6TB/200만+ 건의 연구 데이터를 비용 효율적으로 분산 저장하기 위해 선택',
         'Python iRODS 클라이언트 — Java 클라이언트 대비 안정성이 높고 KISTI 서버 환경과 호환',
