@@ -9,7 +9,7 @@ const CONTACTS = [
   },
   {
     label: 'GitHub',
-    value: 'github.com/Jskyu',
+    value: portfolio.github.replace('https://', ''),
     href: portfolio.github,
     icon: '🐙',
   },
