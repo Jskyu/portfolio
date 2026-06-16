@@ -9,10 +9,10 @@ export default function Contact() {
         </p>
 
         <h2 className="text-4xl font-extrabold text-gray-900 mb-3">
-          함께 풀고 싶은 문제가 있다면
+          연락은 언제든 환영합니다
         </h2>
         <p className="text-gray-500 mb-10">
-          데이터·백엔드 플랫폼 관련 채용에 관심있습니다. 가장 빠른 연락은 이메일입니다.
+          백엔드·데이터 플랫폼 포지션을 찾고 있습니다. 이메일로 편하게 보내주세요.
         </p>
 
         <div className="flex flex-wrap gap-3">

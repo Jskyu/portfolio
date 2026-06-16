@@ -63,19 +63,16 @@ npm test          # Vitest 단위 테스트
 | 항목 | 필드 |
 |------|------|
 | 기본 정보 | `name` · `email` · `github` · `tagline` |
-| 소개 문단 | `about[]` |
-| 전문분야 | `expertise[]` |
-| 경력 | `career[]` (회사 · 기간 · 역할 · 프로젝트 목록) |
-| 기술 스택 | `skills[]` (카테고리 · 배지 목록) |
-| 케이스 스터디 | `projects[]` (문제 · 아키텍처 · 결과 · 트러블슈팅) |
-| 트러블슈팅 | `troubleshooting[]` (문제 · 해결 · 결과) |
-
-아키텍처 다이어그램 이미지는 `public/`에 추가하고 `projects[].architecture` 필드에 파일명을 등록한다.
+| 소개 문단 | `about` |
+| 전문분야 | `expertise` |
+| 경력 | `career` (회사 · 기간 · 역할 · 프로젝트 목록) |
+| 기술 스택 | `skills` (카테고리 · 배지 목록) |
+| 케이스 스터디 | `projects` (문제 · 아키텍처 · 결과 · 트러블슈팅) |
+| 트러블슈팅 | `troubleshooting` (문제 · 해결 · 결과) |
 
 ## 디자인 원칙
 
 - 흰 배경 + 인디고(`indigo-500/600`) 단일 액센트
 - 시스템 산세리프 본문, `font-mono`로 라벨·수치·코드 강조
-- 한국어 `-했습니다` 톤, 측정된 숫자로 뒷받침
 - 섹션 레이블 `01 — ABOUT` 포맷, 헤어라인 구분선
 - Framer Motion 스크롤 페이드업, `viewport: { once: true }`
