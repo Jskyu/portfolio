@@ -10,9 +10,9 @@ export const portfolio = {
   phone: '+82 10-8193-7533',
 
   stats: [
-    { label: '경력', value: '6년' },
-    { label: '프로젝트', value: '×20+' },
-    { label: '도입 기관 검색엔진', value: '5개+' },
+    { label: '수행 프로젝트', value: '20개+' },
+    { label: '최적화 레코드', value: '200만+' },
+    { label: '관리 데이터', value: '6TB+' },
   ],
 
   about: [
@@ -55,7 +55,7 @@ export const portfolio = {
         {
           name: '서천군 통합 홈페이지 전면개편',
           period: '2026.01 ~ 2026.04',
-          link: 'https://www.jejunuh.co.kr/main/index.do'
+          link: 'https://www.seocheon.go.kr/kor/index.do'
         },
         {
           name: '공주시 행복누림 홈페이지 구축',
@@ -74,7 +74,7 @@ export const portfolio = {
         {
           name: '서산 빅데이터 플랫폼 구축',
           period: '2024.10 ~ 2025.02',
-          link: 'https://www.seosan.go.kr/dataportal/',
+          link: 'https://www.seosan.go.kr/dataportal',
         },
         {
           name: '홍성 빅데이터 플랫폼 구축',
