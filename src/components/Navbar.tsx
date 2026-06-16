@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react'
 
 const NAV_LINKS = [
   { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
   { label: 'Career', href: '#career' },
-  { label: 'Education', href: '#education' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Stack', href: '#stack' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Troubleshooting', href: '#troubleshooting' },
 ]
 
 export default function Navbar() {
@@ -23,25 +23,25 @@ export default function Navbar() {
         scrolled ? 'bg-white/90 backdrop-blur shadow-sm' : 'bg-transparent'
       }`}
     >
-      <nav className="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a
-          href="#"
-          className="w-9 h-9 rounded-full bg-indigo-500 flex items-center justify-center text-white font-bold text-sm"
-        >
-          JS
+      <nav className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+        <a href="#" className="font-mono font-bold text-gray-900 text-sm tracking-tight">
+          JSKYU<span className="text-indigo-500">.</span>
         </a>
-        <ul className="hidden sm:flex gap-6">
+        <ul className="hidden md:flex items-center gap-8">
           {NAV_LINKS.map(({ label, href }) => (
             <li key={label}>
-              <a
-                href={href}
-                className="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
-              >
+              <a href={href} className="text-sm text-gray-600 hover:text-indigo-600 transition-colors">
                 {label}
               </a>
             </li>
           ))}
         </ul>
+        <a
+          href="#contact"
+          className="px-4 py-2 rounded-lg bg-indigo-600 text-white text-sm font-medium hover:bg-indigo-700 transition-colors"
+        >
+          Contact
+        </a>
       </nav>
     </header>
   )

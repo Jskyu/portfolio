@@ -2,27 +2,25 @@ import { portfolio } from '../data/portfolio'
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 bg-gray-50">
-      <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-3xl font-extrabold text-gray-900 mb-2">Skills</h2>
-        <div className="w-12 h-1 bg-indigo-500 mb-10 rounded" />
+    <section id="stack" className="py-24 bg-white border-t border-gray-100">
+      <div className="max-w-5xl mx-auto px-6">
+        <p className="font-mono text-xs text-indigo-500 tracking-[0.2em] uppercase mb-12">
+          03 — TECH STACK
+        </p>
 
-        <div className="grid gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {portfolio.skills.map((cat) => (
-            <div
-              key={cat.category}
-              className="bg-white rounded-xl p-6 shadow-sm border border-gray-100"
-            >
-              <h3 className="text-xs font-semibold text-indigo-600 uppercase tracking-wider mb-4">
+            <div key={cat.category} className="border border-gray-100 rounded-xl p-5">
+              <p className="font-mono text-xs text-indigo-400 tracking-widest mb-4">
                 {cat.category}
-              </h3>
+              </p>
               <div className="flex flex-wrap gap-2">
-                {cat.items.map((skill) => (
+                {cat.items.map((item) => (
                   <span
-                    key={skill}
-                    className="px-3 py-1.5 rounded-full bg-indigo-50 text-indigo-700 text-sm font-medium"
+                    key={item}
+                    className="font-mono text-xs px-2.5 py-1 border border-gray-200 rounded text-gray-600"
                   >
-                    {skill}
+                    {item}
                   </span>
                 ))}
               </div>

@@ -2,27 +2,43 @@ import { portfolio } from '../data/portfolio'
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-white">
-      <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-3xl font-extrabold text-gray-900 mb-2">About Me</h2>
-        <div className="w-12 h-1 bg-indigo-500 mb-10 rounded" />
+    <section id="about" className="py-24 bg-white border-t border-gray-100">
+      <div className="max-w-5xl mx-auto px-6">
+        <p className="font-mono text-xs text-indigo-500 tracking-[0.2em] uppercase mb-12">
+          01 — ABOUT
+        </p>
 
-        <div className="grid sm:grid-cols-3 gap-4 mb-12">
-          {portfolio.stats.map((stat) => (
-            <div
-              key={stat.label}
-              className="bg-indigo-50 rounded-xl p-6 text-center"
-            >
-              <p className="text-3xl font-extrabold text-indigo-600 mb-1">{stat.value}</p>
-              <p className="text-sm text-gray-500">{stat.label}</p>
-            </div>
-          ))}
-        </div>
+        <div className="grid md:grid-cols-2 gap-14">
+          <div className="space-y-5 text-gray-600 leading-relaxed">
+            {portfolio.about.map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
+          </div>
 
-        <div className="space-y-5 text-gray-600 leading-relaxed">
-          {portfolio.about.map((paragraph, i) => (
-            <p key={i}>{paragraph}</p>
-          ))}
+          <div className="space-y-0">
+            {portfolio.expertise.map((item) => (
+              <div key={item.num} className="border-b border-gray-100 py-5 last:border-0">
+                <div className="flex items-start gap-4">
+                  <span className="font-mono text-xs text-indigo-300 pt-0.5 w-6 flex-shrink-0">
+                    {item.num}
+                  </span>
+                  <div>
+                    <p className="font-semibold text-gray-900 mb-2">{item.title}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {item.tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="font-mono text-xs text-gray-400 bg-gray-50 px-2 py-0.5 rounded"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

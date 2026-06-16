@@ -4,9 +4,9 @@ import Skills from '../components/Skills'
 import { portfolio } from '../data/portfolio'
 
 describe('Skills', () => {
-  it('renders section heading', () => {
+  it('renders section label', () => {
     render(<Skills />)
-    expect(screen.getByText('Skills')).toBeInTheDocument()
+    expect(screen.getByText(/TECH STACK/)).toBeInTheDocument()
   })
 
   it('renders all skill categories', () => {

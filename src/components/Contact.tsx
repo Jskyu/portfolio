@@ -1,53 +1,35 @@
 import { portfolio } from '../data/portfolio'
 
-const CONTACTS = [
-  {
-    label: 'Email',
-    value: portfolio.email,
-    href: `mailto:${portfolio.email}`,
-    icon: '✉️',
-  },
-  {
-    label: 'GitHub',
-    value: portfolio.github.replace('https://', ''),
-    href: portfolio.github,
-    icon: '🐙',
-  },
-  {
-    label: 'Phone',
-    value: portfolio.phone,
-    href: `tel:${portfolio.phone.replace(/\s/g, '')}`,
-    icon: '📱',
-  },
-] as const
-
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 bg-white">
-      <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-3xl font-extrabold text-gray-900 mb-2">Contact</h2>
-        <div className="w-12 h-1 bg-indigo-500 mb-10 rounded" />
+    <section id="contact" className="py-24 bg-white border-t border-gray-100">
+      <div className="max-w-5xl mx-auto px-6">
+        <p className="font-mono text-xs text-indigo-500 tracking-[0.2em] uppercase mb-12">
+          06 — CONTACT
+        </p>
 
-        <div className="grid sm:grid-cols-3 gap-4">
-          {CONTACTS.map(({ label, value, href, icon }) => (
-            <a
-              key={label}
-              href={href}
-              target={href.startsWith('http') ? '_blank' : undefined}
-              rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
-              className="group flex items-center gap-4 bg-indigo-50 hover:bg-indigo-100 transition-colors rounded-xl p-5"
-            >
-              <span className="text-2xl">{icon}</span>
-              <div>
-                <p className="text-xs text-indigo-400 font-semibold uppercase tracking-wide">
-                  {label}
-                </p>
-                <p className="text-gray-700 text-sm font-medium group-hover:text-indigo-700 transition-colors break-all">
-                  {value}
-                </p>
-              </div>
-            </a>
-          ))}
+        <h2 className="text-4xl font-extrabold text-gray-900 mb-3">
+          함께 풀고 싶은 문제가 있다면
+        </h2>
+        <p className="text-gray-500 mb-10">
+          데이터·백엔드 플랫폼 관련 채용에 관심있습니다. 가장 빠른 연락은 이메일입니다.
+        </p>
+
+        <div className="flex flex-wrap gap-3">
+          <a
+            href={`mailto:${portfolio.email}`}
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors"
+          >
+            {portfolio.email}
+          </a>
+          <a
+            href={portfolio.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-gray-200 text-gray-600 font-medium hover:border-indigo-400 hover:text-indigo-600 transition-colors"
+          >
+            {portfolio.github.replace('https://', '')}
+          </a>
         </div>
       </div>
     </section>

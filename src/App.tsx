@@ -2,9 +2,10 @@ import { motion, type Variants } from 'framer-motion'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
-import Skills from './components/Skills'
 import Career from './components/Career'
-import Education from './components/Education'
+import Skills from './components/Skills'
+import Projects from './components/Projects'
+import Troubleshooting from './components/Troubleshooting'
 import Contact from './components/Contact'
 
 const fadeUp: Variants = {
@@ -22,7 +23,7 @@ function AnimatedSection({ children }: { children: React.ReactNode }) {
       variants={fadeUp}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.12 }}
+      viewport={{ once: true, amount: 0.08 }}
     >
       {children}
     </motion.div>
@@ -35,11 +36,12 @@ export default function App() {
       <Navbar />
       <Hero />
       <AnimatedSection><About /></AnimatedSection>
-      <AnimatedSection><Skills /></AnimatedSection>
       <AnimatedSection><Career /></AnimatedSection>
-      <AnimatedSection><Education /></AnimatedSection>
+      <AnimatedSection><Skills /></AnimatedSection>
+      <AnimatedSection><Projects /></AnimatedSection>
+      <AnimatedSection><Troubleshooting /></AnimatedSection>
       <AnimatedSection><Contact /></AnimatedSection>
-      <footer className="py-8 text-center text-sm text-gray-400 bg-gray-50 border-t border-gray-100">
+      <footer className="py-8 text-center font-mono text-xs text-gray-300 bg-white border-t border-gray-100">
         © 2026 정성규 · Built with React + Tailwind CSS
       </footer>
     </div>

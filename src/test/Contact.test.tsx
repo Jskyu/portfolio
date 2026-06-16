@@ -4,9 +4,9 @@ import Contact from '../components/Contact'
 import { portfolio } from '../data/portfolio'
 
 describe('Contact', () => {
-  it('renders section heading', () => {
+  it('renders section label', () => {
     render(<Contact />)
-    expect(screen.getByText('Contact')).toBeInTheDocument()
+    expect(screen.getByText(/CONTACT/)).toBeInTheDocument()
   })
 
   it('renders email address', () => {

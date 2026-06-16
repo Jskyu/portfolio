@@ -8,8 +8,8 @@ describe('portfolio data', () => {
     expect(portfolio.github).toBe('https://github.com/Jskyu')
   })
 
-  it('has 5 skill categories', () => {
-    expect(portfolio.skills).toHaveLength(5)
+  it('has 6 skill categories', () => {
+    expect(portfolio.skills).toHaveLength(6)
   })
 
   it('has 3 career entries', () => {

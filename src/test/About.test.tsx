@@ -4,15 +4,15 @@ import About from '../components/About'
 import { portfolio } from '../data/portfolio'
 
 describe('About', () => {
-  it('renders section heading', () => {
+  it('renders section label', () => {
     render(<About />)
-    expect(screen.getByText('About Me')).toBeInTheDocument()
+    expect(screen.getByText(/ABOUT/)).toBeInTheDocument()
   })
 
-  it('renders all stat values', () => {
+  it('renders all expertise titles', () => {
     render(<About />)
-    portfolio.stats.forEach((stat) => {
-      expect(screen.getByText(stat.value)).toBeInTheDocument()
+    portfolio.expertise.forEach((item) => {
+      expect(screen.getByText(item.title)).toBeInTheDocument()
     })
   })
 
