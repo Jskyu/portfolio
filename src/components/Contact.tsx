@@ -30,6 +30,12 @@ export default function Contact() {
           >
             {portfolio.github.replace('https://', '')}
           </a>
+          <button
+            onClick={() => window.print()}
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-gray-200 text-gray-600 font-medium hover:border-indigo-400 hover:text-indigo-600 transition-colors"
+          >
+            이력서 PDF
+          </button>
         </div>
       </div>
     </section>

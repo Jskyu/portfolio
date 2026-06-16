@@ -7,6 +7,7 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Troubleshooting from './components/Troubleshooting'
 import Contact from './components/Contact'
+import Resume from './components/Resume'
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 28 },
@@ -33,17 +34,20 @@ function AnimatedSection({ children }: { children: React.ReactNode }) {
 export default function App() {
   return (
     <div className="font-sans text-gray-900 antialiased">
-      <Navbar />
-      <Hero />
-      <AnimatedSection><About /></AnimatedSection>
-      <AnimatedSection><Career /></AnimatedSection>
-      <AnimatedSection><Skills /></AnimatedSection>
-      <AnimatedSection><Projects /></AnimatedSection>
-      <AnimatedSection><Troubleshooting /></AnimatedSection>
-      <AnimatedSection><Contact /></AnimatedSection>
-      <footer className="py-8 text-center font-mono text-xs text-gray-300 bg-white border-t border-gray-100">
-        © 2026 정성규 · Built with React + Tailwind CSS
-      </footer>
+      <div className="print:hidden">
+        <Navbar />
+        <Hero />
+        <AnimatedSection><About /></AnimatedSection>
+        <AnimatedSection><Career /></AnimatedSection>
+        <AnimatedSection><Skills /></AnimatedSection>
+        <AnimatedSection><Projects /></AnimatedSection>
+        <AnimatedSection><Troubleshooting /></AnimatedSection>
+        <AnimatedSection><Contact /></AnimatedSection>
+        <footer className="py-8 text-center font-mono text-xs text-gray-300 bg-white border-t border-gray-100">
+          © 2026 정성규 · Built with React + Tailwind CSS
+        </footer>
+      </div>
+      <Resume />
     </div>
   )
 }
