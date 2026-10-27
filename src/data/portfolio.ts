@@ -39,6 +39,27 @@ export const portfolio = {
 
   career: [
     {
+      company: '개인 프로젝트',
+      department: '',
+      role: '1인 개발',
+      period: '2026.06 ~ 현재',
+      duration: '운영 중',
+      description:
+        '산업재해 전문 노동법률사무소의 웹사이트를 기획·개발·배포·운영까지 1인으로 담당하고 있습니다. Astro 기반 정적 사이트를 Cloudflare Pages에 배포하여 빠른 로딩 속도와 안정적인 서비스를 제공합니다.',
+      projects: [
+        {
+          name: '하온 노동법률사무소 홈페이지',
+          period: '2026.06 ~ 현재',
+          link: 'https://하온.com'
+        },
+        {
+          name: '산재전문 노동법률사무소 홈페이지',
+          period: '2026.06 ~ 현재',
+          link: 'https://산재전문.com'
+        },
+      ],
+    },
+    {
       company: '㈜지오넷',
       department: '플랫폼개발본부 개발1팀',
       role: '부파트장',
@@ -131,6 +152,12 @@ export const portfolio = {
       major: 'IT융합전자공학과',
       period: '2016.03 ~ 2022.02',
       note: 'SW 동아리 회장 역임 (2020.03 ~ 2021.02)',
+    },
+    {
+      school: '정보처리기사',
+      major: '한국산업인력공단',
+      period: '2026.09.11',
+      note: '국가기술자격증',
     },
   ],
 
