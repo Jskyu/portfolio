@@ -138,8 +138,8 @@ export const portfolio = {
       company: '㈜에이리스',
       department: '개발부',
       role: '수습·인턴',
-      period: '2020.07 ~ 2020.12',
-      duration: '6개월',
+      period: '2020.09 ~ 2021.01',
+      duration: '5개월',
       description:
         '소규모 포털 프로젝트에서 SpringBoot 2 · JPA 기반 API 구현부터 JEUS8 · Tibero 환경 운영까지 경험하였습니다.',
       projects: [],
